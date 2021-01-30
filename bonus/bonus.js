@@ -4,7 +4,19 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
-function isPrimaryColor(color) {}
+const isPrimaryColor = color => {
+  switch (color) {
+    case "red" :
+      return true;
+    case "blue" :
+      return true;
+    case "yellow" :
+      return true;
+    default :
+      return false;
+  }
+}
+
 
 /**
  * Takes in color and returns whether or not the color is a primary color.
