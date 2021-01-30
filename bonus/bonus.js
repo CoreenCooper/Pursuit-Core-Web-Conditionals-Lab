@@ -69,13 +69,17 @@ const longerWord = (word1, word2) => word1.length < word2.length ? word2 : word1
  */
 
 const shortestWord = (word1, word2, word3) => {
- 
+  let first = word1.length
+  let second = word2.length
+  let third = word3.length
+  if (first < second && first < third) {
+    return word1
+  } else if (second < first && second < third) {
+    return word2
+  } else if (third < first && third < second) {
+    return word3
+  }
 }
-console.log(shortestWord("cats", "dog", "turtle"))
-console.log(shortestWord("Ruby","Python", "JavaScript"))
-console.log(shortestWord("bear","tree", "bag"))
-
-
 
 module.exports = {
   isPrimaryColor,
