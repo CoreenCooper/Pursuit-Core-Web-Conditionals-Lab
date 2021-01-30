@@ -164,7 +164,7 @@ const evenOrOdd = num => num % 2 === 0 ? "Even" : "Odd"
  * @returns {string} - "Even or Odd"
  */
 
-const evenOrOddWithTernary = num => num % 2 === 1 ? "Odd" : "Even"
+const evenOrOddWithTernary = num => num % 2 !== 0 ? "Odd" : "Even"
 
 /**
  * Takes in two numbers and returns the larger number
