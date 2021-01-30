@@ -107,7 +107,19 @@ const aroundTheWorldGreetingWithSwitch = language => {
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-const calculateLetterGrade = () => {}
+const calculateLetterGrade = (grade) => {
+  if (grade >= 90) {
+    return "A"
+  } else if (grade >= 80) {
+    return "B"
+  } else if (grade >= 70) {
+    return "C"
+  } else if (grade >= 60) {
+    return "D"
+  } else {
+    return "F"
+  }
+}
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
