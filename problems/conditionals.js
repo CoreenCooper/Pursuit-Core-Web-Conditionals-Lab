@@ -24,14 +24,22 @@ const findLarger = (num1, num2) => num1 > num2 ? num1 : num2
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
-function findLargerOrTie() {}
+const findLargerOrTie = (num1, num2) => {
+  if (num1 === num2) {
+    return "tie"
+  } else if (num1 > num2) {
+    return num1
+  } else {
+    return num2
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is positive, negative, or equal to 0.
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-function positiveNegativeOrZero() {}
+const positiveNegativeOrZero = () => {}
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -43,7 +51,7 @@ function positiveNegativeOrZero() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreeting() {}
+const aroundTheWorldGreeting = () => {}
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
@@ -56,7 +64,7 @@ function aroundTheWorldGreeting() {}
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-function aroundTheWorldGreetingWithSwitch() {}
+const aroundTheWorldGreetingWithSwitch = () => {}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
@@ -69,7 +77,7 @@ function aroundTheWorldGreetingWithSwitch() {}
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
-function calculateLetterGrade() {}
+const calculateLetterGrade = () => {}
 
 /**
  * Takes in two variables: animal ('cat', 'dog', etc.) and numberOfAnimals.
@@ -81,7 +89,7 @@ function calculateLetterGrade() {}
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-function animalCounts() {}
+const animalCounts = () => {}
 
 
 /**
@@ -89,7 +97,7 @@ function animalCounts() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOdd() {}
+const evenOrOdd = () => {}
 
 /**
  * Takes in a number and returns whether that number is even or odd
@@ -97,7 +105,7 @@ function evenOrOdd() {}
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-function evenOrOddWithTernary() {}
+const evenOrOddWithTernary = () => {}
 
 /**
  * Takes in two numbers and returns the larger number
@@ -107,7 +115,7 @@ function evenOrOddWithTernary() {}
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-function findLargerTernary() {}
+const findLargerTernary = () => {}
 
 
 
