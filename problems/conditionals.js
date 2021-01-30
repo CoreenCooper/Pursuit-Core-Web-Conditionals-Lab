@@ -59,7 +59,18 @@ const positiveNegativeOrZero = num => {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-const aroundTheWorldGreeting = () => {}
+
+/*line 69 was an else statement does it really 
+return the param set to "english as a default?"*/
+const aroundTheWorldGreeting = (language = "english") => {
+  if (language === "german") {
+    return "Hallo Welt"
+  } else if (language === "spanish") {
+    return "Hola Mundo"
+  } else if (language === "english") {
+    return "Hello World"
+  } 
+}
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
