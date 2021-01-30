@@ -163,6 +163,7 @@ const evenOrOdd = num => num % 2 === 0 ? "Even" : "Odd"
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
+
 const evenOrOddWithTernary = num => num % 2 === 1 ? "Odd" : "Even"
 
 /**
@@ -173,9 +174,8 @@ const evenOrOddWithTernary = num => num % 2 === 1 ? "Odd" : "Even"
  * @param {number} b - The second number.
  * @returns {number} - The larger number.
  */
-const findLargerTernary = () => {}
 
-
+const findLargerTernary = (num1, num2) => num1 > num2 ? num1 : num2
 
 module.exports = {
   isEqual,
