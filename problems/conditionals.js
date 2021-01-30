@@ -39,7 +39,15 @@ const findLargerOrTie = (num1, num2) => {
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
-const positiveNegativeOrZero = () => {}
+const positiveNegativeOrZero = num => {
+  if (num === 0) {
+    return "Zero"
+  } else if (num > 0) {
+    return "Positive"
+  } else {
+    return "Negative"
+  }
+}
 
 /**
  * Takes in a language (e.g "english", "spanish", "german") and returns "Hello World" in that language.
