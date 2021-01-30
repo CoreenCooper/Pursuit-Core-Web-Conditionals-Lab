@@ -15,7 +15,7 @@ const isEqual = (value1, value2) => value1 === value2 ? true : false
  * @returns {number} - The larger number.
  */
 
-const findLarger = (num1, num2) => num1 > num2 ? true : false
+const findLarger = (num1, num2) => num1 > num2 ? num1 : num2
 
 /**
  * Takes in two numbers and returns the larger number
