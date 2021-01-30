@@ -49,7 +49,7 @@ const lexicographicalOrder = (word1, word2) => word1 < word2 ? word1 : word2;
  * @returns {string} - "large" or "small"
  */
 
-const largeOrSmall = word => word >= 5 ? "large" : "small";
+const largeOrSmall = (word) => word.length >= 5 ? "large" : "small";
 
 /**
  * Takes in two words and returns the longer word.
@@ -64,11 +64,18 @@ const longerWord = (word1, word2) => word1.length < word2.length ? word2 : word1
  * Takes in three words and returns the shortest word.
  * @param {string} word1 - The first word.
  * @param {string} word2 - The second word.
- * @param {string} word3 - The second word.
+ * @param {string} word3 - The third word.
  * @returns {string} - The shortest word
  */
 
-const shortestWord = (word1, word2) => {}
+const shortestWord = (word1, word2, word3) => {
+ 
+}
+console.log(shortestWord("cats", "dog", "turtle"))
+console.log(shortestWord("Ruby","Python", "JavaScript"))
+console.log(shortestWord("bear","tree", "bag"))
+
+
 
 module.exports = {
   isPrimaryColor,
