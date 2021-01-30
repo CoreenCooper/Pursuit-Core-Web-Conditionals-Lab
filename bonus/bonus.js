@@ -58,7 +58,7 @@ const largeOrSmall = word => word >= 5 ? "large" : "small";
  * @returns {string} - The longer word
  */
 
-function longerWord() {}
+const longerWord = (word1, word2) => word1.length < word2.length ? word2 : word1;
 
 /**
  * Takes in three words and returns the shortest word.
@@ -68,7 +68,7 @@ function longerWord() {}
  * @returns {string} - The shortest word
  */
 
-function shortestWord() {}
+const shortestWord = (word1, word2) => {}
 
 module.exports = {
   isPrimaryColor,
