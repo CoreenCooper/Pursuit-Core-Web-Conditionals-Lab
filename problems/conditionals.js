@@ -83,7 +83,18 @@ const aroundTheWorldGreeting = (language = "english") => {
  * @param {string} language - The language.
  * @returns {string} - "Hello World" in the desired language
  */
-const aroundTheWorldGreetingWithSwitch = () => {}
+
+/* this past the test but does it really meet the instrutions? */
+const aroundTheWorldGreetingWithSwitch = language => {
+  switch (language) {
+    case "spanish" :
+      return "Hola Mundo"
+    case "german" :
+      return "Hallo Welt"
+    default :
+      return "Hello World"
+  }
+}
 
 /**
  * Takes in a number and returns the letter grade corresponding to that number.
