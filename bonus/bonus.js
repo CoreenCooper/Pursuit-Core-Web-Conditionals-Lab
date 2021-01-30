@@ -24,7 +24,13 @@ const isPrimaryColor = color => {
  * @param {string} color - The color.
  * @returns {boolean} - If primary color or not
  */
-function isPrimaryColorOneIf() {}
+const isPrimaryColorOneIf = color => {
+  if (color === "red".toLowerCase() || color === "yellow".toLowerCase() || color === "blue".toLowerCase()) {
+    return true
+  } else {
+    return false
+  }
+}
 
 /**
  * Takes in two words and returns the word that comes first in lexicographical order.
