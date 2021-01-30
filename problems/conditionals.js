@@ -131,8 +131,19 @@ const calculateLetterGrade = (grade) => {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
-const animalCounts = () => {}
-
+const animalCounts = (animal, numberOfAnimals) => {
+  if (numberOfAnimals > 1) {
+    if (animal === "sheep") {
+      return "a folk of sheep"
+    } else if (animal === "geese"){
+      return "a gaggle of geese"
+    } else {
+      return `${numberOfAnimals} ${animal}s`
+    }
+  } else {
+    return `${numberOfAnimals} ${animal}`
+  }
+}
 
 /**
  * Takes in a number and returns whether that number is even or odd
