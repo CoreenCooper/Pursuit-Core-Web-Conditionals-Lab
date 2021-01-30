@@ -4,6 +4,7 @@
  * @param {string} color - The color.
  * @returns {boolean} - Whether the color is a primary color
  */
+
 const isPrimaryColor = color => {
   switch (color) {
     case "red" :
@@ -17,13 +18,13 @@ const isPrimaryColor = color => {
   }
 }
 
-
 /**
  * Takes in color and returns whether or not the color is a primary color.
  * Uses exactly one if statement in its definition
  * @param {string} color - The color.
  * @returns {boolean} - If primary color or not
  */
+
 const isPrimaryColorOneIf = color => {
   if (color === "red".toLowerCase() || color === "yellow".toLowerCase() || color === "blue".toLowerCase()) {
     return true
@@ -38,13 +39,8 @@ const isPrimaryColorOneIf = color => {
  * @param {string} word2 - The second word.
  * @returns {string} - The word that is smaller in lexicographical order
  */
-const lexicographicalOrder = (word1, word2) => {
-  if (word1 < word2) {
-    return word1
-  } else {
-    return word2
-  }
-}
+
+const lexicographicalOrder = (word1, word2) => word1 < word2 ? word1 : word2;
 
 /**
  * Takes in a word and returns "large" if its length is 5 character or more.
@@ -52,7 +48,8 @@ const lexicographicalOrder = (word1, word2) => {
  * @param {string} word
  * @returns {string} - "large" or "small"
  */
-function largeOrSmall() {}
+
+const largeOrSmall = word => word >= 5 ? "large" : "small";
 
 /**
  * Takes in two words and returns the longer word.
@@ -60,6 +57,7 @@ function largeOrSmall() {}
  * @param {string} word2 - The second word.
  * @returns {string} - The longer word
  */
+
 function longerWord() {}
 
 /**
@@ -69,6 +67,7 @@ function longerWord() {}
  * @param {string} word3 - The second word.
  * @returns {string} - The shortest word
  */
+
 function shortestWord() {}
 
 module.exports = {
