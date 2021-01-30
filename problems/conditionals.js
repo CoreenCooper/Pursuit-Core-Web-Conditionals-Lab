@@ -24,6 +24,7 @@ const findLarger = (num1, num2) => num1 > num2 ? num1 : num2
  * @param {number} b - The second number.
  * @returns {number|string } - The larger number or string "tie"
  */
+
 const findLargerOrTie = (num1, num2) => {
   if (num1 === num2) {
     return "tie"
@@ -39,6 +40,7 @@ const findLargerOrTie = (num1, num2) => {
  * @param {number} a - The number.
  * @returns {string} - "Positive, Negative, "Zero""
  */
+
 const positiveNegativeOrZero = num => {
   if (num === 0) {
     return "Zero"
@@ -107,6 +109,7 @@ const aroundTheWorldGreetingWithSwitch = language => {
  * @param {number} grade - The numeric grade.
  * @returns {string} - The letter grade corresponding to the numeric grade.
  */
+
 const calculateLetterGrade = (grade) => {
   if (grade >= 90) {
     return "A"
@@ -131,6 +134,7 @@ const calculateLetterGrade = (grade) => {
  * @param {number} numberOfAnimals - The number of animals.
  * @returns {string} - the number and animal (in either single or plural form)
  */
+
 const animalCounts = (animal, numberOfAnimals) => {
   if (numberOfAnimals > 1) {
     if (animal === "sheep") {
@@ -150,7 +154,8 @@ const animalCounts = (animal, numberOfAnimals) => {
  * @param {number} a - The number.
  * @returns {string} - "Even or Odd"
  */
-const evenOrOdd = () => {}
+
+const evenOrOdd = num => num % 2 === 0 ? "Even" : "Odd"
 
 /**
  * Takes in a number and returns whether that number is even or odd
